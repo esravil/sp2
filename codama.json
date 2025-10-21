@@ -1,0 +1,12 @@
+{
+    "idl": "target/idl/sp2.json",
+    "before": [],
+    "scripts": {
+        "js": {
+            "from": "@codama/renderers-js",
+            "args": [
+                "app/src/clients/generated"
+            ]
+        }
+    }
+}

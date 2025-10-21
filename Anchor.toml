@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+sp2 = "8SfHhHnLEUz4x4BqMWv1994qGHCcMd6afMUd5Y7EtyfL"
+
+[programs.devnet]
+sp2 = "8SfHhHnLEUz4x4BqMWv1994qGHCcMd6afMUd5Y7EtyfL"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/ESRAV1LM5xMXr7MGp9ePceXgWCvrNmrz9Bqp417E4zog.json"
+
+[scripts]
+test = "npm run client:gen && npx tsx --test --test-reporter=spec tests/**/*.ts"
