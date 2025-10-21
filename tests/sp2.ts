@@ -523,6 +523,7 @@ describe("make + take + refund (kit-only, ATA-safe mint)", () => {
 
       const offerInfo = await connection.rpc.getAccountInfo(offerPda, { encoding: "base64" } as any).send();
       assert.equal(offerInfo.value, null);
-    });
+    }
+  );
 
 });
